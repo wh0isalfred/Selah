@@ -94,6 +94,7 @@ export default function HomeScreen() {
                <Text style={{color: Theme.colors.muted, fontSize: isTablet ? 16 : width * 0.035}}>Panda Vibe Area</Text>
             </View>
             <Text style={[styles.promptText, { color: isDark ? Theme.colors.muted : themeColors.text, fontSize: isTablet ? 22 : width * 0.045 }]}>What&apos;s on your mind?</Text>
+            <Text style={[styles.tapInstruction, { color: Theme.colors.primary }]}>Tap + to Selah</Text>
           </View>
 
           {/* 4. History */}
@@ -149,6 +150,7 @@ const styles = StyleSheet.create({
   pandaHero: { alignItems: 'center', marginVertical: 20, width: '100%' },
   pandaPlaceholder: { borderWidth: 1, justifyContent: 'center', alignItems: 'center', marginBottom: 15 },
   promptText: { fontWeight: '700', textAlign: 'center' },
+  tapInstruction: { marginTop: 8,fontWeight: '500',fontSize: 13,opacity: 0.7,letterSpacing: 0.4, fontStyle: 'italic',},
   historySection: { marginTop: 30, width: '100%' },
   sectionHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 15 },
   sectionTitle: { fontWeight: '700' },
