@@ -1,26 +1,24 @@
-const tintColorLight = "#14b8a6"; // teal
-const tintColorDark = "#2dd4bf";
-
 export const Colors = {
   light: {
-    text: "#0f172a",
-    background: "#ffffff",
-    tint: tintColorLight,
-    icon: "#64748b",
-    tabIconDefault: "#94a3b8",
-    tabIconSelected: tintColorLight,
-    card: "#f8fafc",
-    border: "#e2e8f0"
+    text: '#1E293B',
+    background: '#FFFFFF',
+    cardBackground: '#F8F9FA',
+    primary: '#FF9E8D',
+    primaryDark: '#FF7B66', // Exists here
+    border: '#E2E8F0',
+    tabInactive: '#94A3B8',
+    muted: '#64748B', 
+    tabBackground: '#FFFFFF',
   },
-
   dark: {
-    text: "#f1f5f9",
-    background: "#020617",
-    tint: tintColorDark,
-    icon: "#94a3b8",
-    tabIconDefault: "#64748b",
-    tabIconSelected: tintColorDark,
-    card: "#0f172a",
-    border: "#1e293b"
+    text: '#F8FAFC',
+    background: '#0F172A',
+    cardBackground: '#1E293B',
+    primary: '#FF9E8D',
+    primaryDark: '#FF7B66', // ADD THIS: Even if it's the same color for now
+    border: '#334155',
+    tabInactive: '#64748B',
+    muted: '#94A3B8',       // ADD THIS: For consistency
+    tabBackground: '#0F172A',
   }
 };

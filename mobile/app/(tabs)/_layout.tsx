@@ -1,20 +1,20 @@
 // app/(tabs)/_layout.tsx
 import { Tabs } from "expo-router";
-import { BottomTab } from "../../components/navigation/BottomTab";
+import BottomTabNavigator from "../../components/navigation/BottomTab";
 
 export default function TabsLayout() {
   return (
     <Tabs
-      tabBar={(props) => <BottomTab {...props} />}
+      // This tells Expo Router to use your custom UI instead of the default bar
+      tabBar={(props) => <BottomTabNavigator {...props} />}
       screenOptions={{
         headerShown: false,
-        tabBarHideOnKeyboard: true, // This hides the bar when keyboard is up
-        tabBarStyle: { position: 'absolute' } 
+        // When using a custom tabBar, some tabBarStyle props are ignored 
+        // unless handled inside the custom component itself.
       }}
     >
-      <Tabs.Screen name="index" options={{ title: "Home" }} />
+      <Tabs.Screen name="index" options={{ title: "Selah" }} />
       <Tabs.Screen name="notes" options={{ title: "Notes" }} />
-      <Tabs.Screen name="selah" options={{ title: "Selah" }} />
       <Tabs.Screen name="profile" options={{ title: "Profile" }} />
     </Tabs>
   );
